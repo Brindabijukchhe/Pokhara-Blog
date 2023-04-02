@@ -1,0 +1,229 @@
+:root{
+    --primary:rgb(255, 10, 104);
+    --shadow:-5px 5px 10px rgb(127, 122, 119);
+}
+
+
+
+body{
+margin:0;
+}
+
+
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+    
+h2{
+    color: var(--primary);
+}
+
+
+.btn{
+    background: rgb(253, 187, 163);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  var(--shadow);
+}
+/* GLOBAL SECTION */
+.global{
+    background: goldenrod;
+    padding: 0.7rem 0;
+    color: white;
+}
+
+
+
+.header{
+    background:  rgb(173, 56, 5);
+    color: whitesmoke;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8rem;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.menu ul li{
+    margin-left: 16px;
+    cursor: pointer;
+
+}
+
+.menu ul li:hover{
+background: rgba(221, 176, 176, 0.544);
+transform: scale(1.5);
+}
+
+
+.hero{
+    background: url(img/nepal.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box{
+    background: rgba(226, 61, 61, 0.3);
+    color: white;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    width:450px;
+   
+    display: flex;
+    flex-direction : column;
+    text-align: center;
+}
+
+.hero-box hr{
+    flex-direction: column;
+}
+
+
+/* latest posts */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .articles {
+    width: 66%;
+    
+  }
+  
+  .side-links {
+    width: 34%;
+  }
+  
+  article {
+    display: flex;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .art-img {
+    max-width: 200px;
+  }
+
+  .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+ 
+article .btn{
+    float:right;
+}
+/* side links */
+
+.side-links{
+    width: 44%;
+
+}
+
+
+.country{
+    background: rgb(246, 177, 188);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.date{
+    background:  rgb(246, 177, 188);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+/* Recommendations */
+ .recc{
+    background: rgba(233, 241, 163, 0.767);
+    padding: 2rem 0;
+ }
+
+
+.card{
+    background: rgb(238, 221, 221);
+    width: 300px;
+    border-radius:10px ;
+    box-shadow: var(--shadow);
+    padding-bottom: 1rem;
+    flex-grow:1;
+   
+}
+.card img{
+    border-radius:10px 10px 0 0;
+
+}
+
+.card button{
+    text-align: center;
+    width: 100%;
+}
+
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+/* subscription */
+.subs{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+
+.subs input{
+    line-height: 2rem;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 0.5px;
+    margin-right: 1rem;
+
+}
+
+
+
+
+/* footer */
+
+.footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
